@@ -425,27 +425,18 @@
         .back-button a:hover {
             background-color: #800f0f;
         }
-        .back-button {
-            margin-top: 20px;
-            display: block;
-            text-align: center;
-        }
-
-        .back-button a:hover {
-            background-color: #9B1313;
-        }
     </style>
 </head>
 
 <body>
     <header>
        <img src="Logo.png" alt="Logo de IMPORTADORA JARMA">
-        <h1> SECCIÓN DE LÁCTEOS </h1>
+        <h1>ALIMENTOS DE PRIMERANECESIDAD </h1>
         <div class="search-container">
             <input type="text" id="search-input" placeholder="Buscar laptops...">
             <button type="button" onclick="searchLaptops()">Buscar</button>
             <div class="cart-icon" onclick="toggleCart()">
-                <img src="logocarrito.jpg" alt="Carrito">
+                 <img src="logocarrito.jpg" alt="Carrito">
                 <span class="cart-count" id="cart-count">0</span>
             </div>
         </div>
@@ -478,62 +469,63 @@
             <button type="button" onclick="proceedToCheckout()">Proceder al Pago</button>
         </div>
     </div>
+
     <script>
          let laptops = [
             {
-                name: 'CREMA VITA ',
-                description: 'CREMA VITA 200ML',
-                price: 594.99,
-                image: 'LACTEOS/GAMING1.png'
+                name: ' ACEITE ALESOL VEGETAL ',
+                description: 'ACEITE ALESOL VEGETAL 900ML',
+                price: 1.90,
+                image: 'ALIMENTOSDEPRIMERANECESIDAD/aceite.jpg'
             },
 			{
-                name: 'HELADO TOPSY',
-                description: 'HELADO TOPSY 1LITRO',
+                name: 'ARROZ BLANCO REAL ',
+                description: 'ARROZ BLANCO REAL 1KG',
                 price: 1.50,
-                image: 'LACTEOS/helado.jpg'
+                image: 'ALIMENTOSDEPRIMERANECESIDAD/arroz.jpg'
             },			
 			{
-                name: 'LECHE TRU DESCREMADA  ',
-                description: 'LECHE TRU DESCREMADA 1LITRO ',
+                name: ' FREJOL NEGRO ',
+                description: 'FREJOL NEGRO 500G ',
                 price: 1.00,
-                image: 'LACTEOS/leche.jpg'
+                image: 'ALIMENTOSDEPRIMERANECESIDAD/Frijoles.jpg'
             },
 						
 			{
-                name: 'LECHE ALMENDRAS ',
-                description: 'LECHE ALMENDRAS 1LITRO',
+                name: 'ARINA DE TRIGO  ',
+                description: 'ARINA DE TRIGO 1KG',
                 price: 1.10,
-                image: 'LACTEOS/leche_almendra.jpg'
+                image: 'ALIMENTOSDEPRIMERANECESIDAD/harina_trigo.jpg'
             },	
             {
-                name: 'LECHE DE COCO  ',
-                description: 'LECHE DE COCO 1LITRO',
+                name: ' CUBETA DE HUEVOS ',
+                description: 'CUBETA DE HUEVOS',
                 price: 1.00,
-                image: 'LACTEOS/leche_coco.jpg'
+                image: 'ALIMENTOSDEPRIMERANECESIDAD/huevos.jpg'
             },
             {
-                name: 'LECHE LA LECHERA  ',
-                description: 'LECHE LA LECHERA DESLAPTOSADA 1LITRO ',
-                price: 1.50,
-                image: 'LACTEOS/leche_deslactosada.jpg'
+                name: ' FREJOL BAYO BOLON ',
+                description: 'FREJOL BAYO BOLON 500G ',
+                price: 1.30,
+                image: 'ALIMENTOSDEPRIMERANECESIDAD/Frijoles1.jpg'
             },
 			{
-                name: 'LECHE ENTERA ',
-                description: 'LECHE ENTERA 1LITRO',
+                name: 'AZUCAR VALDEZ  ',
+                description: 'AZUCAR VALDEZ 1G',
                 price: 0.90,
-                image: 'LACTEOS/leche_entera.jpg'
+                image: 'ALIMENTOSDEPRIMERANECESIDAD/azucar.jpg'
             },
 			{
-                name: 'LECHE LA VAQUITA ',
-                description: 'LECHE ENTERA  LA VAQUITA 750ML ',
-                price: 0.75,
-                image: 'LACTEOS/Lechev.jpg'
+                name: ' SAL CRIS SAL  ',
+                description: 'SAL  DE MESA CRIS SAL 2KG ',
+                price: 1.00,
+                image: 'ALIMENTOSDEPRIMERANECESIDAD/sal.jpg'
             },
 			{
-                name: 'MANTEQUILLA AUSTRIANA ',
-                description: 'MANTEQUILLA TRADICIONAL 250G',
-                price: 1.99,
-                image: 'LACTEOS/mantequilla.jpg'
+                name: 'ARROZ CONEJO  ',
+                description: 'ARROZ CONEJO 100LS',
+                price: 7.00,
+                image: 'ALIMENTOSDEPRIMERANECESIDAD/arroz2.jpg'
             },
         ];
 
@@ -624,7 +616,7 @@
         }
 
         function proceedToCheckout() {
-            window.location.href = 'checkout.html';
+            window.location.href = 'C:/xampp/htdocs/proyecto/checkout.html';
         }
 
         function searchLaptops() {

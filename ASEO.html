@@ -425,22 +425,13 @@
         .back-button a:hover {
             background-color: #800f0f;
         }
-        .back-button {
-            margin-top: 20px;
-            display: block;
-            text-align: center;
-        }
-
-        .back-button a:hover {
-            background-color: #9B1313;
-        }
     </style>
 </head>
 
 <body>
     <header>
        <img src="Logo.png" alt="Logo de IMPORTADORA JARMA">
-        <h1> SECCIÓN DE LÁCTEOS </h1>
+        <h1> SECCIÓN DE ASEO </h1>
         <div class="search-container">
             <input type="text" id="search-input" placeholder="Buscar laptops...">
             <button type="button" onclick="searchLaptops()">Buscar</button>
@@ -478,63 +469,65 @@
             <button type="button" onclick="proceedToCheckout()">Proceder al Pago</button>
         </div>
     </div>
+
     <script>
          let laptops = [
             {
-                name: 'CREMA VITA ',
-                description: 'CREMA VITA 200ML',
-                price: 594.99,
-                image: 'LACTEOS/GAMING1.png'
+                name: 'AGUA MINERAL GÜITIG',
+                description: 'AGUA MINERAL GÜITIG 500ML',
+                price: 0.50,
+                image: 'BEBIDAS/agua_mineral.jpg'
             },
-			{
-                name: 'HELADO TOPSY',
-                description: 'HELADO TOPSY 1LITRO',
-                price: 1.50,
-                image: 'LACTEOS/helado.jpg'
-            },			
-			{
-                name: 'LECHE TRU DESCREMADA  ',
-                description: 'LECHE TRU DESCREMADA 1LITRO ',
+			            {
+                name: 'AGUA IMPERIAL ',
+                description: ' AGUA IMPERIAL 1500ML',
                 price: 1.00,
-                image: 'LACTEOS/leche.jpg'
+                image: 'BEBIDAS/agua_mineralIM.jpg'
             },
-						
-			{
-                name: 'LECHE ALMENDRAS ',
-                description: 'LECHE ALMENDRAS 1LITRO',
-                price: 1.10,
-                image: 'LACTEOS/leche_almendra.jpg'
-            },	
-            {
-                name: 'LECHE DE COCO  ',
-                description: 'LECHE DE COCO 1LITRO',
-                price: 1.00,
-                image: 'LACTEOS/leche_coco.jpg'
+			            {
+                name: 'AGUA TESALIA',
+                description: 'AGUA TESALIA 625ML',
+                price: 0.49,
+                image: 'BEBIDAS/Agua1.jpg'
             },
-            {
-                name: 'LECHE LA LECHERA  ',
-                description: 'LECHE LA LECHERA DESLAPTOSADA 1LITRO ',
-                price: 1.50,
-                image: 'LACTEOS/leche_deslactosada.jpg'
+			            {
+                name: 'BEBIDA ENERGETICA 220 ',
+                description: 'BEBIDA ENERGETICA 220 ',
+                price: 0.70,
+                image: 'BEBIDAS/bebida_energetica.jpg'
             },
-			{
-                name: 'LECHE ENTERA ',
-                description: 'LECHE ENTERA 1LITRO',
-                price: 0.90,
-                image: 'LACTEOS/leche_entera.jpg'
+			            {
+                name: 'AGUA MINERAL GÜITIG',
+                description: 'AGUA MINERAL GÜITIG 500ML',
+                price: 0.50,
+                image: 'BEBIDAS/agua_mineral.jpg'
             },
-			{
-                name: 'LECHE LA VAQUITA ',
-                description: 'LECHE ENTERA  LA VAQUITA 750ML ',
-                price: 0.75,
-                image: 'LACTEOS/Lechev.jpg'
+			            {
+                name: 'SIX PACK CERVEZA CORONA ',
+                description: 'SIX PACK CERVEZA CORONA 330ML',
+                price: 5.50,
+                image: 'BEBIDAS/cerveza.jpg'
             },
-			{
-                name: 'MANTEQUILLA AUSTRIANA ',
-                description: 'MANTEQUILLA TRADICIONAL 250G',
-                price: 1.99,
-                image: 'LACTEOS/mantequilla.jpg'
+			            {
+                name: 'SIX PACK CERVEZA CLUBVERDE ',
+                description: 'SIX PACK CERVEZA CLUBVERDE 330ML',
+                price: 7.00,
+                image: 'BEBIDAS/CervezaC.jpg'
             },
+			            {
+                name: 'COCA COLA ',
+                description: 'COCA COLA  2L',
+                price: 2.00,
+                image: 'BEBIDAS/coca_cola.jpg'
+            },
+			            {
+                name: 'JUGO DE NARANJA TRU ',
+                description: 'JUGO DE NARANJA TRU 1LITRO',
+                price: 0.50,
+                image: 'BEBIDAS/jugo_naranja.jpg'
+            },
+
+
         ];
 
         let cart = JSON.parse(localStorage.getItem('cart')) || [];
@@ -624,7 +617,7 @@
         }
 
         function proceedToCheckout() {
-            window.location.href = 'checkout.html';
+            window.location.href = 'C:/xampp/htdocs/proyecto/checkout.html';
         }
 
         function searchLaptops() {
